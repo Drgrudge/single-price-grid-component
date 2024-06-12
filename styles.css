@@ -1,0 +1,150 @@
+/* Import the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* Reset some basic styles */
+body, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2 {
+    padding: 6px; /* Add desired padding value for h1 and h2 */
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 30px;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 650px;
+    width: 100%;
+}
+
+.header {
+    padding: 20px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.header h1 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.guarantee {
+    color: hsl(71, 73%, 54%);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(179, 62%, 43%);
+    padding: 0px;
+}
+
+.price, .why-us {
+    flex: 1;
+    color: #fff;
+    padding: 30px;
+}
+
+.price {
+    border-bottom: 1px solid #fff;
+    /* padding-bottom: 20px; */
+    text-align: left;
+    padding: 30px;
+}
+.price h2 {
+    margin-top: 10px; /* Adjust this value as needed */
+    margin-bottom: 10px; /* Adjust this value as needed */
+}
+
+
+.price h2,
+.price p {
+    text-align: left;
+}
+
+.amount {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.amount span {
+    font-size: 0.8rem;
+    color: hsl(204, 43%, 93%);
+}
+
+.details {
+    margin-bottom: 20px;
+}
+
+.signup-button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: #fff;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.signup-button:hover {
+    background-color: hsl(65, 72%, 53%);
+}
+
+.why-us {
+    padding-top: 20px;
+}
+
+.why-us h2 {
+    margin-bottom: 10px;
+}
+
+.why-us ul li {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .subscription {
+        flex-direction: row;
+    }
+
+    .price {
+        border-bottom: none;
+        border-right: 1px solid #fff;
+    }
+
+    .signup-button {
+        max-width: 400px;
+    }
+}
