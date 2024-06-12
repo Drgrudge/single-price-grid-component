@@ -18,9 +18,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Change from height to min-height */
     padding: 60px 30px;
     box-sizing: border-box;
+    overflow-y: auto; /* Make body scrollable on overflow */
 }
 
 .card {
@@ -30,6 +31,7 @@ body {
     overflow: hidden;
     max-width: 650px;
     width: 100%;
+    /* padding: 20px; Add padding to the card */
 }
 
 .header {
@@ -74,11 +76,11 @@ body {
     text-align: left;
     padding: 30px;
 }
+
 .price h2 {
     margin-top: 10px; /* Adjust this value as needed */
     margin-bottom: 10px; /* Adjust this value as needed */
 }
-
 
 .price h2,
 .price p {
@@ -146,5 +148,13 @@ body {
 
     .signup-button {
         max-width: 400px;
+    }
+}
+
+/* Add top and bottom padding for small devices */
+@media (max-width: 767px) {
+    body {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
